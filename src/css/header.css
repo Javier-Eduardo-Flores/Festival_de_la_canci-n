@@ -1,0 +1,183 @@
+
+header{
+    background: linear-gradient(90deg, #57D7E1 0%, #0A4EAF 100%);
+    padding: 16.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-text{
+    min-width: 20rem;
+    margin: auto;
+}
+
+.header-text h1{
+    max-width: 48rem;
+    font-size: 4rem;
+    font-family: 'Aref Ruqaa', serif;
+    margin:0 auto 40px;
+    text-align: center;
+}
+
+.header-text p{
+    font-size: 1.3rem;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #494747;
+    text-align: center;
+}
+
+header .button{
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    padding: 13px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Baumans";
+    color: #fff;
+    background-color: #0250CB;
+    box-shadow: 0 3px 10px 2px  rgba(45, 108, 210,0.5);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+header .button:hover{
+    background-color: #2d6cd2;
+    transform: scale(1.02);
+}
+header img{
+position: absolute;
+width: 9%;
+min-width: 80px;
+z-index: 10;
+}
+
+header .img-1{
+    right: 7rem;
+    top: 18rem;
+    transform: rotate(-12deg);
+}
+
+header .img-2{
+    right: 24rem;
+    transform: rotate(-12deg);
+}
+header .img-3{
+    top: 10px;
+    right: -11rem;
+    width: 45%;
+    transform: rotate(65deg);
+    z-index: 9;
+}
+
+header .img-4{
+    top: 2rem;
+    right: 30rem;
+    transform: rotate(20deg);
+}
+
+header .img-5{
+    bottom: 10rem;
+    left: 2rem;
+    transform: rotate(40deg);
+}
+
+header .img-6{
+    top: 8rem;
+    transform: rotate(20deg);
+}
+header .img-7{
+    right: 4rem;
+    width: 8%;
+    transform: rotate(20deg);
+}
+
+header .img-8{
+    top: 1rem;
+    left: 18rem;
+    transform: rotate(15deg);
+    max-width: 9%;
+}
+
+header .img-9{
+    top:21rem;
+    max-width: 8%;
+    transform: rotate(-30deg);
+}
+
+header .img-10{
+    left: 20rem;
+    transform: rotate(30deg);
+}
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    header .img-1{
+        display: none;
+    }
+
+    header .img-4{
+        top: 5rem;
+        right: 15rem;
+    }
+    header .img-10{
+        display: none;
+    }
+    header .img-2{
+        right: 50%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 989px){
+    header .img-1{
+        display: none;
+    }
+
+    header .img-4{
+        right: 12rem;
+    }
+    header .img-10{
+        display: none;
+    }
+    header .img-2{
+        right: 50%;
+    }
+
+    header .img-9{
+        display: none;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 760px){
+    header{
+        padding:7rem 0 13rem;
+    }
+
+    header h1{
+        font-size: 10rem;
+    }
+
+    header .img-1,.img-9,.img-3,.img-4, .img-8 , .img-6 , .img-10, .img-2{
+        display: none;
+    }
+    header .img-4{
+        right: 12rem;
+    }
+    header .img-2{
+        right: 50%;
+    }
+    header .img-5{
+        bottom: 8rem;
+    }
+
+    header a.button{
+        display: none;
+    }
+
+
+}
+

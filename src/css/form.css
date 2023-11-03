@@ -1,0 +1,109 @@
+.form-content{
+    padding: 5rem 2rem;
+    background: linear-gradient(90deg, #57D7E1 0%, #0A4EAF 100%);
+    position: relative;
+}
+
+.form-content p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.form-content form{
+    max-width: 38rem;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    gap: 3rem;
+    background: rgba(188, 195, 195, 0.235);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    position: relative;
+    z-index: 100;
+}
+.form-content input{
+    width: 90%;
+    height: 2rem;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.17);
+    outline: none;
+    font-size: 1rem;
+}
+.form-content input::placeholder{
+    color: rgba(0, 0, 0, 0.583);
+}
+
+.form-content button{
+    background-color: #0A4EAF;
+    border: none;
+    width: 200px;
+    height: 60px;
+    padding: 13px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 2px  rgba(45, 108, 210,0.5);
+    font-size: 1.5rem;
+    font-family: "Baumans";
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+.form-content button:hover{
+    background-color: #2d6cd2;
+    transform: scale(1.02);
+}
+
+.form-content img{
+    position: absolute;
+    width: 8%;
+    min-width: 80px;
+    z-index: 10;
+}
+
+.form-content img:nth-child(1){
+    top: 30px;
+    transform: rotate(22deg);
+}
+
+.form-content img:nth-child(2){
+    bottom: 35%;
+    left: 23%;
+    transform: rotate(22deg);
+}
+.form-content img:nth-child(3){
+    bottom: 20%;
+    right: 10%;
+    transform: rotate(22deg);
+}
+
+.form-content img:nth-child(4){
+    top: 10%;
+    right: 10%;
+    transform: rotate(-22deg);
+}
+
+.form-content img:nth-child(5){
+    top: 35%;
+    right: 23%;
+    transform: rotate(22deg);
+}
+
+.form-content img:nth-child(6){
+    bottom: 10%;
+    transform: rotate(22deg);
+}
+
+@media screen and (min-width: 300px) and (max-width: 760px){
+    .form-content{
+        padding: 5rem 0;
+    }
+
+    .form-content img:nth-child(1), .form-content img:nth-child(4), .form-content img:nth-child(6){
+      display: none;
+    }
+
+}
+
