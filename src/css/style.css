@@ -7,7 +7,7 @@
 html{
     scroll-behavior: smooth;
 }
-p,h2,input,li{
+p,h2,input,li,label,textarea,select,h3{
     font-family: 'Balsamiq Sans', sans-serif;
 }
 

@@ -60,17 +60,46 @@
             </div>
           </div>
         </section>
-        <section class="form-content">
+        <section class="form-content" id="form">
             <p>Puedes inscribirte llenando el siguiente Formulario:</p>
-            <form id="form" action="https://formsubmit.co/c03cc7b81f63cb991152297766d528d0" method="POST">
-                <input type="text" name="Nombre" placeholder="Nombre" required>
-                <input type="number" name="Telefono" placeholder="Numero de Teléfono" required>
-                <input type="text" name="dirección" placeholder="dirección" required>
+            <form action="https://formsubmit.co/c03cc7b81f63cb991152297766d528d0" method="POST">
+                <input type="text" name="Nombre" placeholder="Nombre del participante o encargado del grupo" required>
+                <input type="number" name="Telefono" placeholder="Número de Teléfono" required>
+                <input type="email" name="Correo" placeholder="Correo Electrónico" required>
+                <input type="text" name="Tipo de musica" placeholder="Tipo de Música a presentarse" required>
+                <input type="text" name="dirección" placeholder="Sector / templo al que pertenece" required>
+                <div>
+                    <label for="select">Nº de Canciones a presentar:</label>
+                    <select name="Numero de Canciones a pressentar" id="select" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="canciones">
+                    <div class="cancion">
+                        <h3>Canción <span class="numero-Cancion">1</span></h3>
+                        <input type="text" name="nombre de la canción" placeholder="Nombre de la canción">
+                        <textarea name="Instrumentos a utilizar" placeholder="Instrumentos a utilizar" required></textarea>
+                        <textarea name="descripcion de la cancion" placeholder="Breve descripción de la canción" required></textarea>
+                    </div>
+                </div>
+                <div class="trayectoria">
+                    <label for="descripcion-trayectoria">Escriba una breve biografía de su trayectoria en la música y su vinculo espiritual:</label>
+                    <textarea name="descripcion-trayectoria" id="descripcion-trayectoria"></textarea>
+                </div>
+                <div class="tipo-de-participante">
+                    <p>Tipo de Participante:</p>
+                    <label><input type="radio" name="tipo-participante" value="individual" id="individual" checked>individual</label>
+                    <label><input type="radio" name="tipo-participante" value="grupal" id="grupal">grupal</label>
+                </div>                
+                
                 <button type="submit">Inscribirse</button>
                 <input type="hidden" name="_next" value="https://festival-catolico-de-la-cancion.netlify.app">
                 <input type="hidden" name="_captcha" value="false">
             </form>
-            <p>El pago de la inscripción de 150lps se hace al asistir al evento.</p>
+            <p>El pago de la inscripción de <strong>150lps</strong> se hace al asistir al evento.</p>
            <div class="images">
             <img src="./src/img/nota7.webp" alt="nota">
             <img src="./src/img/nota7.webp" alt="nota">
