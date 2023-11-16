@@ -69,31 +69,62 @@
                 <input type="text" name="Tipo de musica" placeholder="Tipo de Música a presentarse" required>
                 <input type="text" name="dirección" placeholder="Sector / templo al que pertenece" required>
                 <div>
-                    <label for="select">Nº de Canciones a presentar:</label>
-                    <select name="Numero de Canciones a pressentar" id="select" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                    <label for="select-canciones">Nº de Canciones a presentar:</label>
+                    <select name="Numero-de-Canciones-a-presentar" id="select-canciones" required>
+                        <option class="opcion-cancion" value="1">1</option>
+                        <option class="opcion-cancion" value="2">2</option>
+                        <option class="opcion-cancion" value="3">3</option>
+                        <option class="opcion-cancion" value="4">4</option>
                     </select>
                 </div>
                 <div class="canciones">
                     <div class="cancion">
                         <h3>Canción <span class="numero-Cancion">1</span></h3>
-                        <input type="text" name="nombre de la canción" placeholder="Nombre de la canción">
-                        <textarea name="Instrumentos a utilizar" placeholder="Instrumentos a utilizar" required></textarea>
-                        <textarea name="descripcion de la cancion" placeholder="Breve descripción de la canción" required></textarea>
+                        <input type="text" name="nombre-de-la-canción" placeholder="Nombre de la canción" required>
+                        <textarea name="Instrumentos-a-utilizar-cancion-1" placeholder="Instrumentos a utilizar" required></textarea>
+                        <textarea name="descripcion-de-la-cancion-1" placeholder="Breve descripción de la canción" required></textarea>
                     </div>
                 </div>
                 <div class="trayectoria">
-                    <label for="descripcion-trayectoria">Escriba una breve biografía de su trayectoria en la música y su vinculo espiritual:</label>
-                    <textarea name="descripcion-trayectoria" id="descripcion-trayectoria"></textarea>
+                    <label for="descripcion-trayectoria-individual">Escriba una breve biografía de su trayectoria en la música y su vinculo espiritual:</label>
+                    <textarea name="descripcion-trayectoria-individual" id="descripcion-trayectoria"></textarea>
                 </div>
                 <div class="tipo-de-participante">
-                    <p>Tipo de Participante:</p>
+                    <p>Tipo de Participación</p>
                     <label><input type="radio" name="tipo-participante" value="individual" id="individual" checked>individual</label>
                     <label><input type="radio" name="tipo-participante" value="grupal" id="grupal">grupal</label>
-                </div>                
+                </div>  
+                <div class="grupal">
+                    <input type="text" name="nombre del grupo" placeholder="Nombre del grupo" required>
+                    <div>
+                        <label for="select-integrantes">Nº de Integrantes:</label>
+                        <select class="cantidad-integrantes" name="Numero-de-integrantes" id="select-integrantes" required>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="integrantes">
+                        <div class="integrante">
+                            <h3>integrante <span class="numero-integrante">1</span></h3>
+                            <input type="text" name="nombre-del-integrante-1" placeholder="Nombre del integrante" required>
+                            <input type="text" name="especialidad-del-integrante-1" placeholder="Especialidad del integrante">
+                        </div>
+                        <div class="integrante">
+                            <h3>integrante <span class="numero-integrante">2</span></h3>
+                            <input type="text" name="nombre-del-integrante-2" placeholder="Nombre del integrante" required>
+                            <input type="text" name="especialidad del integrante-2" placeholder="Especialidad del integrante">
+                        </div>
+                    </div>
+                    <div class="trayectoria">
+                        <label for="descripcion-trayectoria-grupal">Escriba una breve biografía de su trayectoria en la música y su vinculo espiritual (como grupo):</label>
+                        <textarea name="descripcion-trayectoria-grupal" id="descripcion-trayectoria-grupal"></textarea>
+                    </div>
+                </div>              
                 
                 <button type="submit">Inscribirse</button>
                 <input type="hidden" name="_next" value="https://festival-catolico-de-la-cancion.netlify.app">

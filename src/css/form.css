@@ -48,7 +48,9 @@
 .form-content .canciones {
     width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .form-content .canciones .cancion{
@@ -64,7 +66,7 @@
     width: 90%;
 }
 
-.form-content .canciones h3{
+.form-content h3{
     text-align: center;
     width: 100%;
 }
@@ -111,6 +113,34 @@
 .form-content .tipo-de-participante input{
     width: 20px;
     margin: 0 10px;
+}
+
+.form-content .grupal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-content .grupal .integrantes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-content .grupal .integrantes .integrante{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-content .grupal .trayectoria label{
+    text-align: center;
+    width: 90%;
 }
 
 .form-content button{
