@@ -202,12 +202,12 @@
     transform: rotate(22deg);
 }
 
-@media screen and (min-width: 300px) and (max-width: 760px){
+@media screen and (min-width: 200px) and (max-width: 760px){
     .form-content{
         padding: 5rem 0;
     }
 
-    .form-content img:nth-child(1), .form-content img:nth-child(4), .form-content img:nth-child(6){
+    .form-content img:nth-child(1), .form-content img:nth-child(4), .form-content img:nth-child(6), .form-content img:nth-child(5),.form-content img:nth-child(2){
       display: none;
     }
 
